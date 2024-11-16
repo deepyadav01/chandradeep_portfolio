@@ -5,14 +5,33 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 // import Clarity from '@microsoft/clarity';
+import { clarity } from 'react-microsoft-clarity';
 
 const Home = () => {
-  // const projectId = "ozjgblsi0g"
+  const projectId = "ozjgblsi0g"
   // Clarity.init(projectId);
   // Clarity.identify("user-id", "deep"); // only custom-id is required
   // Clarity.setTag("Header", "header");
   // Clarity.consent()
   // Clarity.upgrade("reason");
+  clarity.init(projectId);
+
+// Identify the user
+clarity.identify('USER_ID', { userProperty: 'value' });
+
+// Cookie consent
+clarity.consent();
+
+// Setup a custom tag
+clarity.setTag('key', 'value');
+
+// Upgrade session
+clarity.upgrade('upgradeReason');
+
+// Check if Clarity has been initialized before calling its methods
+if (clarity.hasStarted()) {
+  clarity.identify('USER_ID', { userProperty: 'value' });
+}
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
