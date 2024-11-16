@@ -7,12 +7,12 @@ import Clarity from '@microsoft/clarity';
 motion;
 
 const Photo = () => {
-  const projectId = "ozjgblsi0g"
-  Clarity.init(projectId);
-  Clarity.identify("user-id", "deep"); // only custom-id is required
-  Clarity.setTag("Photo", "Photo");
-  Clarity.consent()
-  Clarity.upgrade("reason");
+  // const projectId = "ozjgblsi0g"
+  // Clarity.init(projectId);
+  // Clarity.identify("user-id", "deep"); // only custom-id is required
+  // Clarity.setTag("Photo", "Photo");
+  // Clarity.consent()
+  // Clarity.upgrade("reason");
   return (
     <div className="w-full h-full relative">
       <motion.dev

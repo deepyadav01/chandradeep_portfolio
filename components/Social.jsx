@@ -7,12 +7,12 @@ const socials = [
   { icon: <FaYoutube />, path: "aa" },
 ];
 const Social = ({ containerStyles, iconStyles }) => {
-  const projectId = "ozjgblsi0g"
-  Clarity.init(projectId);
-  Clarity.identify("user-id", "deep"); // only custom-id is required
-  Clarity.setTag("Social", "Social");
-  Clarity.consent()
-  Clarity.upgrade("reason");
+  // const projectId = "ozjgblsi0g"
+  // Clarity.init(projectId);
+  // Clarity.identify("user-id", "deep"); // only custom-id is required
+  // Clarity.setTag("Social", "Social");
+  // Clarity.consent()
+  // Clarity.upgrade("reason");
   return (
     <div className={containerStyles}>
       {socials.map(({ icon, path }, index) => (

@@ -4,8 +4,15 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import Clarity from '@microsoft/clarity';
 
 const Home = () => {
+  const projectId = "ozjgblsi0g"
+  Clarity.init(projectId);
+  Clarity.identify("user-id", "deep"); // only custom-id is required
+  Clarity.setTag("Header", "header");
+  Clarity.consent()
+  Clarity.upgrade("reason");
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">

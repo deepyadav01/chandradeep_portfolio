@@ -23,12 +23,12 @@ const stats = [
 ];
 
 const Stats = () => {
-  const projectId = "ozjgblsi0g"
-  Clarity.init(projectId);
-  Clarity.identify("user-id", "deep"); // only custom-id is required
-  Clarity.setTag("Stats", "Stats");
-  Clarity.consent()
-  Clarity.upgrade("reason");
+  // const projectId = "ozjgblsi0g"
+  // Clarity.init(projectId);
+  // Clarity.identify("user-id", "deep"); // only custom-id is required
+  // Clarity.setTag("Stats", "Stats");
+  // Clarity.consent()
+  // Clarity.upgrade("reason");
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">

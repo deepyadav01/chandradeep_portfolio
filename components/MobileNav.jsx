@@ -31,12 +31,12 @@ const links = [
 
 const MobileNav = () => {
   const pathname = usePathname();
-  const projectId = "ozjgblsi0g"
-  Clarity.init(projectId);
-  Clarity.identify("user-id", "deep"); // only custom-id is required
-  Clarity.setTag("MobileNav", "MobileNav");
-  Clarity.consent()
-  Clarity.upgrade("reason");
+  // const projectId = "ozjgblsi0g"
+  // Clarity.init(projectId);
+  // Clarity.identify("user-id", "deep"); // only custom-id is required
+  // Clarity.setTag("MobileNav", "MobileNav");
+  // Clarity.consent()
+  // Clarity.upgrade("reason");
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">

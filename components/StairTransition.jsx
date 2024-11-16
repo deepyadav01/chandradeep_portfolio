@@ -7,12 +7,12 @@ import Stairs from "./Stairs";
 
 const StairTransition = () => {
   const pathname = usePathname();
-  const projectId = "ozjgblsi0g"
-  Clarity.init(projectId);
-  Clarity.identify("user-id", "deep"); // only custom-id is required
-  Clarity.setTag("StairTransition", "StairTransition");
-  Clarity.consent()
-  Clarity.upgrade("reason");
+  // const projectId = "ozjgblsi0g"
+  // Clarity.init(projectId);
+  // Clarity.identify("user-id", "deep"); // only custom-id is required
+  // Clarity.setTag("StairTransition", "StairTransition");
+  // Clarity.consent()
+  // Clarity.upgrade("reason");
   return (
     <>
       <AnimatePresence mode="wait">
