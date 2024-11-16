@@ -20,12 +20,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // const projectId = "ozjgblsi0g"
-  // Clarity.init(projectId);
-  // Clarity.identify("user-id", "deep"); // only custom-id is required
-  // Clarity.setTag("Header", "header");
-  // Clarity.consent()
-  // Clarity.upgrade("reason");
+
   return (
     <html lang="en">
       <body className={jetBrainsMono.variable}>
@@ -36,8 +31,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
-// pages/_not-found.js or pages/404.js
-export default function NotFoundPage() {
-  return <h1>Page Not Found</h1>;
 }
