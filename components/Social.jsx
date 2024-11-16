@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaGithub , FaLinkedin, FaYoutube} from "react-icons/fa";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 const socials = [
   { icon: <FaGithub />, path: "dee" },
   { icon: <FaLinkedin />, path: "gg" },

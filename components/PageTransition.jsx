@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 
 const PageTransition = ({ children }) => {
   const pathname = usePathname();

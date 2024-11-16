@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 
 const links = [
   {

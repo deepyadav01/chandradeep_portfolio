@@ -1,5 +1,5 @@
 import { animate, motion } from "framer-motion";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 
 const stairAnimation = {
   initial: {

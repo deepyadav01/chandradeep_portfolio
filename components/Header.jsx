@@ -3,15 +3,15 @@ import { Button } from "./ui/button";
 // Component
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 
 const Header = () => {
-  const projectId = "ozjgblsi0g"
-  Clarity.init(projectId);
-  Clarity.identify("user-id", "deep"); // only custom-id is required
-  Clarity.setTag("Header", "header");
-  Clarity.consent()
-  Clarity.upgrade("reason");
+  // const projectId = "ozjgblsi0g"
+  // Clarity.init(projectId);
+  // Clarity.identify("user-id", "deep"); // only custom-id is required
+  // Clarity.setTag("Header", "header");
+  // Clarity.consent()
+  // Clarity.upgrade("reason");
   return (
     <header className="pt-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center">

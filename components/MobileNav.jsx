@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetTrigger, SheetContent } from "./ui/sheet";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 
 const links = [
   {

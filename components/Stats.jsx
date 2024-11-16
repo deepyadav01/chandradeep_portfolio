@@ -1,7 +1,7 @@
 "use client";
 
 import CountUp from "react-countup";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 
 const stats = [
   {

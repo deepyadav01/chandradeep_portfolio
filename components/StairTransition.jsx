@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 //components
 import Stairs from "./Stairs";
 

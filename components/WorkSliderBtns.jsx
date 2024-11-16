@@ -2,7 +2,7 @@
 
 import { useSwiper } from "swiper/react";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 
 const WorkSliderBtns = ({ containerStyles, btnStyles, IconStyles }) => {
   // const projectId = "ozjgblsi0g"

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Clarity from '@microsoft/clarity';
+// import Clarity from '@microsoft/clarity';
 
 motion;
 
