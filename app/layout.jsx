@@ -5,7 +5,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
-// import Clarity from '@microsoft/clarity';
+import ClarityScript from "@/components/ClarityScript"
+
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -28,10 +29,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={jetBrainsMono.variable}>
+        <ClarityScript/>
         <Header />
         <StairTransition/>
         <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
+}
+// pages/_not-found.js or pages/404.js
+export default function NotFoundPage() {
+  return <h1>Page Not Found</h1>;
 }

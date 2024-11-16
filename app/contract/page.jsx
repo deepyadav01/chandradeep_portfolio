@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import ClarityScript from "@/components/ClarityScript"
 
 const info = [
   {
@@ -35,7 +36,9 @@ const info = [
 
 const Contract = () => {
   return (
-    <motion.section
+  <>
+  <ClarityScript/>
+      <motion.section
       initial={{ opaacity: 0 }}
       animate={{
         opaacity: 1,
@@ -106,6 +109,8 @@ const Contract = () => {
         </div>
       </div>
     </motion.section>
+  </>
+
   );
 };
 
