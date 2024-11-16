@@ -2,9 +2,16 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import Clarity from '@microsoft/clarity';
 
 const PageTransition = ({ children }) => {
   const pathname = usePathname();
+  const projectId = "ozjgblsi0g"
+  Clarity.init(projectId);
+  Clarity.identify("user-id", "deep"); // only custom-id is required
+  Clarity.setTag("pageTransition", "pageTransition");
+  Clarity.consent()
+  Clarity.upgrade("reason");
   return (
     <AnimatePresence>
       <div key={pathname}>

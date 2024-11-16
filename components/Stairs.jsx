@@ -1,4 +1,5 @@
 import { animate, motion } from "framer-motion";
+import Clarity from '@microsoft/clarity';
 
 const stairAnimation = {
   initial: {
@@ -20,6 +21,12 @@ const reverseIndex = (index) => {
 };
 
 const Stairs = () => {
+  const projectId = "ozjgblsi0g"
+  Clarity.init(projectId);
+  Clarity.identify("user-id", "deep"); // only custom-id is required
+  Clarity.setTag("Stairs", "Stairs");
+  Clarity.consent()
+  Clarity.upgrade("reason");
   return <>
       {/* render 6 motion devs, each representing a step of the stairs, 
    Each div will have the some animation defined by the stairAnimation oject,

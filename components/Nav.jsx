@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Clarity from '@microsoft/clarity';
 
 const links = [
   {
@@ -26,6 +27,12 @@ const links = [
 ];
 const Nav = () => {
   const pathname = usePathname();
+  const projectId = "ozjgblsi0g"
+  Clarity.init(projectId);
+  Clarity.identify("user-id", "deep"); // only custom-id is required
+  Clarity.setTag("Nav", "Nav");
+  Clarity.consent()
+  Clarity.upgrade("reason");
   return (
     <nav className="flex gap-8">
       {links.map((link, index) => {
