@@ -6,7 +6,8 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 // import ClarityScript from "@/components/ClarityScript"
-import Script from "next/script";
+// import Script from "next/script";
+import Metrics from "./matrics" 
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -27,7 +28,8 @@ export default function RootLayout({ children }) {
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
-        <Script id="clarity" strategy="afterInteractive" type="text/javascript">
+        <Metrics />
+        {/* <Script id="clarity" strategy="afterInteractive" type="text/javascript">
           {`
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -35,7 +37,7 @@ export default function RootLayout({ children }) {
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "ozjgblsi0g");
           `}
-        </Script>
+        </Script> */}
       </body>
     </html>
   );
