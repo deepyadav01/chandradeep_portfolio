@@ -19,7 +19,7 @@ class MyDocument extends Document {
                           t.src = r + "?v=" + ~~(new Date() / 60000);
                           y = l.getElementsByTagName("script")[0];
                           y.parentNode.insertBefore(t, y);
-                        })(window, document, "clarity", "https://www.clarity.ms/tag/YOUR_TRACKING_ID");`
+                        })(window, document, "clarity", "https://www.clarity.ms/tag/ozjgblsi0g");`
             }}
           ></script>
         </Head>
