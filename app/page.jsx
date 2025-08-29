@@ -28,9 +28,9 @@ const downloadPDF = () => {
               Hello I'm <br />{" "}
               <span className="text-accent"> Chandradeep Yadav</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
+            {/* <p className="max-w-[500px] mb-9 text-white/80">
             I possess 6+ years of Developer experience in Full Stack Development, looking for a challenging role in an organization, where I can learn and use my technical skills to fulfil the company assignments, and products and deliver high-performance applications as expected by the client.
-            </p>
+            </p> */}
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button

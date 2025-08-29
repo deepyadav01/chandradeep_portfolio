@@ -26,7 +26,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "about me",
   description:
-    "I possess 6+ years of Developer experience in Full Stack Development, looking for a challenging role in an organization, where I can learn and use my technical skills to fulfil the company assignments, and products and deliver high-performance applications as expected by the client.",
+    "I am Chandradeep Yadav, a passionate Full Stack Developer with 7 years of experience in crafting dynamic and responsive web applications. My expertise lies in both front-end and back-end development, allowing me to create seamless user experiences and robust server-side solutions. I thrive in collaborative environments, constantly seeking to learn and implement the latest technologies to deliver high-quality software solutions that meet client needs.",
   info: [
     {
       fieldName: "Name",
@@ -68,25 +68,25 @@ const experience = {
   icon: "/bedge.png",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium saepe pariatur, ab dolor porro, sed aliquid quasi laudantium nisi suscipit! Officia voluptas est voluptatum exercitationem placeat temporibus eveniet? Minima.",
+    "I possess 7 years of Developer experience in Full Stack Development, looking for a challenging role in an organization, where I can learn and use my technical skills to fulfil the company assignments, and products and deliver high-performance applications as expected by the client.",
   items: [
     {
-      company: "Tech Solution Inc.",
+      company: "MathCo",
       position: "Full Stack Developer",
       duration: "2023 - Present",
     },
     {
-      company: "Web Design",
+      company: "MathCo",
       position: "Full Stack Developer",
       duration: "summer -2022",
     },
     {
-      company: "E-commerce Startup.",
+      company: "MathCo",
       position: "Full Stack Developer",
       duration: "2020 - 2022",
     },
     {
-      company: "Tech Academy",
+      company: "BizRuntime",
       position: "Front-end Developer",
       duration: "2018 - 2020",
     },
@@ -96,7 +96,7 @@ const education = {
   icon: "/bedge.png",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium saepe pariatur, ab dolor porro, sed aliquid quasi laudantium nisi suscipit! Officia voluptas est voluptatum exercitationem placeat temporibus eveniet? Minima.",
+    "I have completed my B.Tech in 2016 from BBD NITEM, Lucknow. I have done my Intermediate from SAV Inter Collage, Etawah in 2010 and High School from Tech Solution Inc., Etawah in 2008.",
   items: [
     {
       institution: "BBD NITEM",

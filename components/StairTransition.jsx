@@ -21,7 +21,7 @@ const StairTransition = () => {
             pointer-events-none z-40 flex">
                 <Stairs/>
             </div>
-            <motion.dev 
+            <motion.div 
             className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
             inital = {{opacity: 1}}
             animate = {{

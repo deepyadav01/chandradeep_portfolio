@@ -34,7 +34,7 @@ const Stairs = () => {
    creating a stahhered effect with decreasing delay for each subsequent step. */}
       {[...Array(6)].map((_, index) => {
         return (
-          <motion.dev
+          <motion.div
             key={index}
             variants={stairAnimation}
             initial="initial"
