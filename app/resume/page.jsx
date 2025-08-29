@@ -8,6 +8,9 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaBootstrap,
+  FaAngular,
+  FaPython
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -23,7 +26,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "about me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam at, delectus deserunt, aliquam magnam adipisci molestias excepturi omnis modi consectetur officia voluptates voluptatem animi dolorem deleniti provident! Amet, aliquam soluta.",
+    "I possess 6+ years of Developer experience in Full Stack Development, looking for a challenging role in an organization, where I can learn and use my technical skills to fulfil the company assignments, and products and deliver high-performance applications as expected by the client.",
   info: [
     {
       fieldName: "Name",
@@ -115,8 +118,8 @@ const education = {
 const skills = {
   icon: "/bedge.png",
   title: "My skills",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium saepe pariatur, ab dolor porro, sed aliquid quasi laudantium nisi suscipit! Officia voluptas est voluptatum exercitationem placeat temporibus eveniet? Minima.",
+  description:"",
+    // "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium saepe pariatur, ab dolor porro, sed aliquid quasi laudantium nisi suscipit! Officia voluptas est voluptatum exercitationem placeat temporibus eveniet? Minima.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -145,6 +148,18 @@ const skills = {
     {
       icon: <FaNodeJs />,
       name: "Node.js",
+    },
+    {
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
+    },
+    {
+      icon: <FaAngular />,
+      name: "Angular",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
     },
   ],
 };
@@ -247,7 +262,9 @@ const Resume = () => {
                         <TooltipProvider>
                           <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group ">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                {skill.icon}
+                              </div>
                             </TooltipTrigger>
                             <TooltipContent>
                               <p className="capitalize">{skill.name}</p>
@@ -261,18 +278,26 @@ const Resume = () => {
               </div>
             </TabsContent>
             {/* about */}
-            <TabsContent value="about" className="w-full text-center xl:text-left">
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) =>{
+                  {about.info.map((item, index) => {
                     return (
-                      <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
                         <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl">{item.FieldValue}</span>
                       </li>
-                    )
+                    );
                   })}
                 </ul>
               </div>

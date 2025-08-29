@@ -1,26 +1,18 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 // components
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
-// import Clarity from '@microsoft/clarity';
-// import { clarity } from 'react-microsoft-clarity';
 
 const Home = () => {
-//   const projectId = "ozjgblsi0g"
-//   // Clarity.init(projectId);
-//   // Clarity.identify("user-id", "deep"); // only custom-id is required
-//   // Clarity.setTag("Header", "header");
-//   // Clarity.consent()
-//   // Clarity.upgrade("reason");
-//   clarity.init(projectId);
-
-// // Identify the user
-// clarity.identify('USER_ID', { userProperty: 'value' });
-
-// // Cookie consent
-// clarity.consent();
+const downloadPDF = () => {
+  const link = document.createElement("a");
+  link.href = "/Chandradeep_resume.pdf";
+  link.download = "Chandradeep_resume.pdf"; // file name when saved
+  link.click();
+};
 
   return (
     <section className="h-full">
@@ -37,8 +29,7 @@ const Home = () => {
               <span className="text-accent"> Chandradeep Yadav</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and i am
-              proficient in various programming languages and technologies.
+            I possess 6+ years of Developer experience in Full Stack Development, looking for a challenging role in an organization, where I can learn and use my technical skills to fulfil the company assignments, and products and deliver high-performance applications as expected by the client.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -46,8 +37,9 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={downloadPDF}
               >
-                <span>Download CV</span>
+                <span>Download Resume</span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
