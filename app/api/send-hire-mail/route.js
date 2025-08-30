@@ -1,7 +1,6 @@
 import { sendHireMail } from "@/lib/sendHireMail";
 
 export async function POST(req) {
-  console.log('RESEND_API_KEY:', process.env.RESEND_API_KEY);
   try {
     const body = await req.json();
     const result = await sendHireMail(body);
