@@ -47,11 +47,30 @@ const Contract = () => {
   });
   const [loading, setLoading] = React.useState(false);
   const [success, setSuccess] = React.useState(null);
+  const [snackbar, setSnackbar] = React.useState({ open: false, message: "" });
 
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
     setSuccess(null);
+    // Validation
+    if (!form.firstname.trim() || !form.lastname.trim() || !form.email.trim() || !form.phone.trim() || !form.message.trim()) {
+      setLoading(false);
+      setSnackbar({ open: true, message: "All fields are required." });
+      return;
+    }
+    // Simple email validation
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email)) {
+      setLoading(false);
+      setSnackbar({ open: true, message: "Please enter a valid email address." });
+      return;
+    }
+    // Simple phone validation (10+ digits)
+    if (!/^\d{10,}$/.test(form.phone.replace(/\D/g, ''))) {
+      setLoading(false);
+      setSnackbar({ open: true, message: "Please enter a valid phone number." });
+      return;
+    }
     try {
       const res = await fetch('/api/send-hire-mail', {
         method: 'POST',
@@ -128,6 +147,12 @@ const Contract = () => {
                 </Button>
                 {success === true && <p className="text-green-500">Message sent!</p>}
                 {success === false && <p className="text-red-500">Failed to send message.</p>}
+                <Snackbar
+                  open={snackbar.open}
+                  message={snackbar.message}
+                  onClose={() => setSnackbar({ open: false, message: "" })}
+                  type="error"
+                />
               </form>
             </div>
             <div
